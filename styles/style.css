@@ -23,11 +23,14 @@
   max-height: 756px;
 }
 
+.logo {
+  width: 183px;
+}
+
 .logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
-  width: 183px;
   height: 32px;
   z-index: 1;
 }
@@ -36,7 +39,8 @@
   align-self: center;
   margin: 0 0 0 64px;
   padding: 0;
-  width: 730px;
+  max-width: 730px;
+  width: 100%;
   font-size: 102px;
   line-height: 96px;
   font-weight: bold;
@@ -49,7 +53,8 @@
   left: 64px;
   margin: 0;
   padding: 0;
-  width: 398px;
+  max-width: 398px;
+  width: 100%;
   font-size: 18px;
   line-height: 25px;
   font-weight: normal;
@@ -61,12 +66,17 @@
   color: #2f80ed;
 }
 
+.header__link:hover {
+  text-decoration: underline;
+}
+
 .header__main-illustration {
   position: absolute;
   right: 0;
   bottom: 0;
   width: 765px;
   height: 608px;
+  object-fit: cover;
 }
 
 .header__square-pic {
@@ -95,7 +105,7 @@
   margin: 0;
   padding: 0;
   color: #2f80ed;
-  min-width: 175px;
+  max-width: 175px;
   font-size: 18px;
   line-height: 1.2;
   font-weight: normal;
@@ -132,6 +142,7 @@
 }
 
 .section-title {
+  position: relative;
   margin: 0 auto;
   padding: 0;
   font-size: 60px;
@@ -139,9 +150,11 @@
   font-weight: bold;
   width: 60%;
   text-align: center;
+  z-index: 1;
 }
 
 .section-subtitle {
+  position: relative;
   margin: 20px auto 0 auto;
   padding: 0;
   font-size: 24px;
@@ -149,6 +162,7 @@
   font-weight: normal;
   width: 60%;
   text-align: center;
+  z-index: 1;
 }
 
 .table {
@@ -207,7 +221,8 @@
   z-index: 1;
   padding-top: 100px;
   margin: 0 auto;
-  width: 648px;
+  max-width: 648px;
+  width: 100%;
   text-align: center;
   font-size: 120px;
   line-height: 1.15;
@@ -237,6 +252,10 @@
   color: #2f80ed;
 }
 
+.feynman__link:hover {
+  text-decoration: underline;
+}
+
 .feynman__main-illustration {
   position: absolute;
   z-index: 0;
@@ -244,6 +263,7 @@
   height: 637px;
   left: 0;
   bottom: 0;
+  object-fit: cover;
 }
 
 /* Стили блока kaufman */
@@ -308,7 +328,6 @@
 }
 
 .logo_place_footer {
-  width: 183px;
   height: 35px;
 }
 
@@ -345,6 +364,10 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: normal;
+}
+
+.footer__column-link:hover {
+  text-decoration: underline;
 }
 
 .footer__social-icon {
