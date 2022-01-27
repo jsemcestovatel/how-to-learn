@@ -1,0 +1,10 @@
+/* поворот с равномерной скоростью по часовой стрелке.
+Фигура поворачивается на 360 ̊ за 20 секунд и двигается бесконечно */
+@keyframes rotation360 {
+  from {transform: rotate(0);}
+  to {transform: rotate(360deg);}
+}
+
+.rotation {
+  animation: rotation360 20s linear infinite normal both;
+}

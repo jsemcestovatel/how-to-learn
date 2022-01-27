@@ -1,0 +1,16 @@
+/* Общие стили */
+/* Установил переменные цвета */
+.page {
+  /* установлена минимальная ширина страницы */
+  min-width: 1100px;
+  /* установлено ограничение по максимальной ширине */
+  max-width: 1600px;
+  /* для экранов больше 1600px отцентрировали весь контент */
+  margin: 0 auto;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  --color-blue: #2f80ed;
+  --color-black: #1f1f1f;
+  --color-grey: #f2f2f2;
+  --color-text: #000;
+  color: var(--color-text)
+}
